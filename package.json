@@ -1,31 +1,40 @@
 {
-    "name": "amber",
-    "publisher": "f4bio",
-    "license": "SEE LICENSE IN LICENSE",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/f4bio/vscode-amber.git"
-    },
-    "displayName": "Amber Syntax Highlighting",
-    "description": "Syntax highlighting for Amber Template Engine",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "1.44.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/f4bio/vscode-amber.git"
+  },
+  "name": "amber",
+  "license": "SEE LICENSE IN LICENSE",
+  "displayName": "Amber Syntax Highlighting",
+  "description": "Syntax highlighting for Amber Template Engine",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "1.44.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "publisher": "f4bio",
+  "contributes": {
+    "languages": [
+      {
+        "id": "amber",
+        "aliases": [
+          "Amber",
+          "amber"
+        ],
+        "extensions": [
+          ".amber"
+        ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "amber",
-            "aliases": ["Amber", "amber"],
-            "extensions": [".amber"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "amber",
-            "scopeName": "source.amber",
-            "path": "./syntaxes/amber.tmLanguage"
-        }]
-    }
+    "grammars": [
+      {
+        "language": "amber",
+        "scopeName": "source.amber",
+        "path": "./syntaxes/amber.tmLanguage"
+      }
+    ]
+  }
 }
