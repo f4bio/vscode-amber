@@ -1,0 +1,25 @@
+{
+    "name": "amber",
+    "displayName": "Amber Syntax",
+    "description": "Syntax highlighting for Amber Template Engine",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "amber",
+            "aliases": ["Amber", "amber"],
+            "extensions": [".amber"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "amber",
+            "scopeName": "source.amber",
+            "path": "./syntaxes/amber.tmLanguage"
+        }]
+    }
+}
